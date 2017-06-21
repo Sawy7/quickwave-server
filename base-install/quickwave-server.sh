@@ -91,3 +91,4 @@ cd ../..
 dconf write /org/mate/desktop/background/picture-filename "'$cwd/plocha/success.png'"
 zenity --info --text "Všechny operace dokončeny!"
 dconf write /org/mate/desktop/background/picture-filename "'$cwd/plocha/click.png'"
+exec bash "$0"
