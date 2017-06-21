@@ -35,7 +35,9 @@ Instalace
   sudo chmod -R 777 /srv/http
   ```
 
-- Nyní překopírujeme base instalaci backendové části do složky Apache web serveru
+- Nyní stáhenem a překopírujeme base instalaci backendové části do složky Apache web serveru
+  - Tato část lze provést několika způsoby - tato sada příkazů ale zaručí vždy nejnovější verzi a jednoduchý postup
+  - Mějte tedy na paměti, že pří stahování jiným způsobem je třeba pohlídat si, jestli byly staženy i balíčky z jiných repositářů (což se při obyčejném klonování repositáře do zipu nestane)
 
   ``` shell
   sudo pacman -S git
@@ -44,13 +46,12 @@ Instalace
   cp -rf quickwave-server/base-install/* /srv/http
   ```
 
-- Přesuneme se do složky, kam jsme nahráli soubory a začneme povolovat spouštění skriptů nutných k běhu programu
+- Přesuneme se do složky, kam jsme nahráli soubory a začneme povolovat spouštění skriptů nutných k běhu programu a taky vytvoříme pár složek
 
   ``` shell
   cd /srv/http
-  chmod a+x quickwave-server.sh
-  chmod a+x abcde/abcde-modified
-  chmod a+x abcde/cddb-tool-modified
+  chmod a+x quickwave-server.sh abcde/abcde-modified abcde/cddb-tool-modified
+  mkdir cds cds/anglictina cds/nemcina cds/francouzstina cds/spanelstina cds/ostatni
   ```
 
 - Nainstalujeme ještě některé závislosti nutné k běhu, které získáme z Arch repositářů
