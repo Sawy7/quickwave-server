@@ -38,10 +38,10 @@ Instalace
 - Nyní překopírujeme base instalaci backendové části do složky Apache web serveru
 
   ``` shell
+  sudo pacman -S git
   cd /tmp
-  wget https://github.com/Sawy7/quickwave-server/archive/master.zip
-  unzip master.zip
-  cp -rf quickwave-server-master/base-install/* /srv/http
+  git clone --recursive https://github.com/Sawy7/quickwave-server.git
+  cp -rf quickwave-server/base-install/* /srv/http
   ```
 
 - Přesuneme se do složky, kam jsme nahráli soubory a začneme povolovat spouštění skriptů nutných k běhu programu
@@ -49,8 +49,8 @@ Instalace
   ``` shell
   cd /srv/http
   chmod a+x quickwave-server.sh
-  chmod a+x abcde/abcde
-  chmod a+x abcde/cddb-tool
+  chmod a+x abcde/abcde-modified
+  chmod a+x abcde/cddb-tool-modified
   ```
 
 - Nainstalujeme ještě některé závislosti nutné k běhu, které získáme z Arch repositářů
