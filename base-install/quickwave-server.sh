@@ -31,7 +31,7 @@ dconf write /org/mate/desktop/background/picture-filename "'$cwd/plocha/waiting.
 mkdir cds/$jazyk/$codename
 mkdir cds/$jazyk/$codename/Audio
 cd cds/$jazyk/$codename/Audio
-cp ../../../../abcde/cddb-tool-modified cddb-tool-modified
+cp ../../../../abcde/cddb-tool-modified cddb-tool
 cp ../../../../abcde/abcde.conf abcde.conf
 read -n 1 -s
 ./../../../../abcde/abcde-modified
