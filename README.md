@@ -17,7 +17,7 @@ Instalace
 
 - Je třeba nainstalovat a spustit Apache server
   ``` shell
-  pacman -Syu
+  sudo pacman -Syu
   sudo pacman -S apache
   sudo systemctl enable httpd.service
   sudo systemctl start httpd.service
