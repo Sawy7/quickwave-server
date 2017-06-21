@@ -34,7 +34,7 @@ cd cds/$jazyk/$codename/Audio
 cp ../../../../abcde/cddb-tool cddb-tool
 cp ../../../../abcde/abcde.conf abcde.conf
 read -n 1 -s
-./../../../../abcde/abcde
+./../../../../abcde/abcde-modified
 rm cddb-tool
 rm abcde.conf
 p=$(ls -1 | wc -l)

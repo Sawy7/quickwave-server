@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iListening</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/mediaelement/build/mediaelementplayer.min.css">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body><!--/header-middle-->
+	<section>
+	   <div class="container-fluid" id="navbar">
+		     <div class="category-tab">
+           <ul class="nav nav-tabs">
+							<li class="active"><a href="#anglictina" data-toggle="tab">Angličtina</a></li>
+							<li><a href="#francouzstina" data-toggle="tab">Francouzština</a></li>
+							<li><a href="#nemcina" data-toggle="tab">Němčina</a></li>
+							<li><a href="#spanelstina" data-toggle="tab">Španělština</a></li>
+							<li><a href="#ostatni" data-toggle="tab">Ostatní</a></li>
+              <li class="navbar-right"><a href="#nefunguje" data-toggle="tab" onclick="testplayinit()">Nefunguje zvuk</a></li>
+              <li class="navbar-right"><a href="#" onclick="refresh()"><i class="fa fa-refresh"></i></a></li>
+            </ul>
+				</div>
+      </div>
+      <div class="container">
+			     <div class="tab-content">
+             <div class="tab-pane fade active in" id="anglictina"></div>
+							<div class="tab-pane fade" id="francouzstina"></div>
+							<div class="tab-pane fade" id="nemcina"></div>
+							<div class="tab-pane fade" id="spanelstina"></div>
+							<div class="tab-pane fade" id="ostatni"></div>
+
+              <div class="tab-pane fade" id="nefunguje">
+                <div class="col-sm-12">
+                  <button a href="#nefunguje2" data-toggle="tab" onclick="testplay()" class="btn btn-default btn-list"><i class="fa fa-wrench"></i>Spustit test</button>
+                  <div style="display: none">
+                    <audio id="testplay">
+                      <source id="test-source">
+                    </audio>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 tab-pane fade text-center" id="nefunguje2">
+                <div class="col-sm-12">
+                  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+                <img src="https://cdn.head-fi.org/a/8135931.jpg" width="375" height="248">
+                <p> </p>
+                <p>
+                  Zkontrolujte zapojení zařízení do audio portů.
+                </p>
+                <button a href="#nefunguje" data-toggle="tab" onclick="teststop()" class="btn btn-default btn-list"><i class="fa fa-volume-up"></i>Už slyším zvuk</button>
+              </div>
+						</div>
+					</div>
+          <footer class="navbar-fixed-bottom" id="audio-bar">
+            <audio id="audio-player" style="width: 100%">
+              <source id="player-source">
+            </audio>
+          </footer>
+	</section>
+
+  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script src="js/jquery.js"></script>
+	  <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/price-range.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+    <script src="alltracks.js"></script>
+    <script src="node_modules/mediaelement/build/mediaelement-and-player.min.js"></script>
+    <script src="customcode.js"></script>
+    <script></script>
+  <script>if (window.module) module = window.module;</script>
+</body>
+</html>
