@@ -38,14 +38,17 @@ Instalace
 - Nyní překopírujeme base instalaci backendové části do složky Apache web serveru
 
   ``` shell
-  cp [cesta k base instalaci]/* /srv/http
+  cd /tmp
+  wget https://github.com/Sawy7/quickwave-server/archive/master.zip
+  unzip master.zip
+  cp -rf quickwave-server-master/base-install/* /srv/http
   ```
 
 - Přesuneme se do složky, kam jsme nahráli soubory a začneme povolovat spouštění skriptů nutných k běhu programu
 
   ``` shell
   cd /srv/http
-  chmod a+x ripper_zenity.#!/bin/sh
+  chmod a+x quickwave-server.sh
   chmod a+x abcde/abcde
   chmod a+x abcde/cddb-tool
   ```
