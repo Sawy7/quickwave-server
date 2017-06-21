@@ -3,6 +3,7 @@ cwd=$(pwd)
 dconf write /org/mate/panel/toplevels/bottom/auto-hide true
 dconf write /org/mate/caja/desktop/computer-icon-visible false
 dconf write /org/mate/caja/desktop/home-icon-visible false
+dconf write /org/mate/caja/desktop/volumes-visible false
 dconf write /org/mate/caja/desktop/trash-icon-visible false
 dconf write /org/mate/desktop/background/color-shading-type "'solid'"
 dconf write /org/mate/desktop/background/picture-options "'centered'"
