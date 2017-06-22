@@ -1,5 +1,11 @@
-Dokumentace Ripperu
+Big thanks
 ==
+>An essential part of this thing is very much dependent on piece of sofrware called abcde. It enabled me to implement one of the features pretty easily and for this all the people that participated on abcde rock!
+
+Link to their page: https://abcde.einval.com/wiki/
+
+Dokumentace Ripperu [CZ - EN version comming soon(ish)]
+===
 Základní informace
 --
 - Jádro programu je Bash script
