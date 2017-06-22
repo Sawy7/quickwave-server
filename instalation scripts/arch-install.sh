@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo pacman -Syu --noconfirm
-sudo pacman -S openssh apache git cdparanoia lame cd-discid vorbis-tools python-eyed3 python2-pathlib dconf-editor --noconfirm
+sudo pacman -S openssh apache git cdparanoia cd-discid vorbis-tools python-eyed3 python2-pathlib dconf-editor --noconfirm
 sudo systemctl enable sshd.socket
 sudo systemctl start sshd.socket
 sudo systemctl enable httpd.service

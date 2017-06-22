@@ -1,5 +1,11 @@
-Dokumentace Ripperu
+Big thanks
 ==
+>An essential part of this thing is very much dependent on piece of sofrware called abcde. It enabled me to implement one of the features pretty easily and for this all the people that participated on abcde rock!
+
+Link to their page: https://abcde.einval.com/wiki/
+
+Dokumentace Ripperu [CZ - EN version comming soon(ish)]
+===
 Základní informace
 --
 - Jádro programu je Bash script
@@ -14,6 +20,7 @@ Instalace
 --
 >Tyto příkazy jsou použitelné pouze při instalaci na Arch Linuxu. S menší úpravou systaxe by měly jít bez ptoblému apllikovat na jakoukoliv distibuci Linuxu pod Sluncem.
 
+>Pokud používáte Arch Linux nebo jakoukoliv jinou distibuci na Archi postavenou, tak můžete využít instalačního skriptu, který by měl teoreticky všechno nastavit za vás. Nachází se tady GitHubu ve složce "instalation-scripts". Je třeba u ně povolit spouštění příkazem "chmod a+x arch-install.sh"
 
 - Je třeba nainstalovat a spustit Apache server
   ``` shell
@@ -57,7 +64,7 @@ Instalace
 - Nainstalujeme ještě některé závislosti nutné k běhu, které získáme z Arch repositářů
 
   ``` shell
-  sudo pacman -S cdparanoia lame cd-discid vorbis-tools python-eyed3 python2-pathlib dconf-editor
+  sudo pacman -S cdparanoia cd-discid vorbis-tools python-eyed3 python2-pathlib dconf-editor
   ```
 
 Užitečné maličkosti
