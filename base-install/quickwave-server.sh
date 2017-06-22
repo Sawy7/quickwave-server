@@ -63,7 +63,7 @@ cd ../..
 echo -e "function $listfunction {
   \t document.getElementById('$codename').style = 'display: none';
   \t document.getElementById('$listname').style = 'overflow-y: scroll; height: 350px';
-  \t document.getElementById('player-source').src = 'cds/$jazyk/$codename/Audio%20(01).mp3';
+  \t document.getElementById('player-source').src = 'cds/$jazyk/$codename/Audio%20(01).ogg';
   \t if (typeof player == 'undefined') {
   \t \t player = new MediaElementPlayer('audio-player');
   \t };
@@ -81,7 +81,7 @@ echo -e "<a href='#' onclick='$fname()' class='list-group-item'>
 </a>" >> loader.html
 cd ../..
 echo -e "function $fname() {
-\t player.setSrc('cds/$jazyk/$codename/Audio/Audio%20(0$i).mp3');
+\t player.setSrc('cds/$jazyk/$codename/Audio/Audio%20(0$i).ogg');
 \t player.load();
 \t player.play()}" >> alltracks.js
 done
@@ -92,3 +92,4 @@ cd ../..
 dconf write /org/mate/desktop/background/picture-filename "'$cwd/plocha/success.png'"
 zenity --info --text "Všechny operace dokončeny!"
 dconf write /org/mate/desktop/background/picture-filename "'$cwd/plocha/click.png'"
+exec bash "$0"
